@@ -6,6 +6,9 @@
 #define CHIP8_INTERPRETER_CHIP8_H
 
 #include <cstdint>
+#include <random>
+
+using namespace std;
 
 class Chip8 {
 public:
@@ -47,9 +50,35 @@ public:
                     0xF0, 0x80, 0xF0, 0x80, 0x80  // F
             };
 
-    void LoadROM(char const* filename);
+    void LoadROM(char const *filename);
+
     void LoadFontset();
+
     uint8_t getRandomByte();
+
+    // Instruction set
+    void OP_00E0();
+    void OP_00EE();
+    void OP_1nnn();
+    void OP_2nnn();
+    void OP_3xkk();
+    void OP_4xkk();
+    void OP_5xy0();
+    void OP_6xkk();
+    void OP_7xkk();
+    void OP_8xy0();
+    void OP_8xy1();
+    void OP_8xy2();
+    void OP_8xy3();
+    void OP_8xy4();
+    void OP_8xy5();
+    void OP_8xy6();
+    void OP_8xy7();
+    void OP_8xyE();
+
+
+    default_random_engine randGen;
+    uniform_int_distribution<uint8_t> randByte;
 };
 
 
