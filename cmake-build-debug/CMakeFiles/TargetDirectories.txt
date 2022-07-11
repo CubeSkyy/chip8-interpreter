@@ -1,3 +1,0 @@
-C:/Users/miguelcoelho/Documents/Projects/chip8-interpreter/cmake-build-debug/CMakeFiles/chip8_interpreter.dir
-C:/Users/miguelcoelho/Documents/Projects/chip8-interpreter/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/miguelcoelho/Documents/Projects/chip8-interpreter/cmake-build-debug/CMakeFiles/rebuild_cache.dir
