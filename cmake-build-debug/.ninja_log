@@ -1,0 +1,18 @@
+# ninja log v5
+1	1157	6792417277728489	CMakeFiles/chip8_interpreter.dir/main.cpp.obj	71a17638db40811e
+486	1007	6792515190259694	chip8_interpreter.exe	32ce5c54384ffa0c
+4	485	6792515185295048	CMakeFiles/chip8_interpreter.dir/Chip8.cpp.obj	b64ab0e095670696
+3	8017	6792518113100171	CMakeFiles/chip8_interpreter.dir/Chip8.cpp.obj	39a45d74dc0cad31
+8028	17397	6792518206459143	chip8_interpreter.exe	32ce5c54384ffa0c
+6	8461	6792518482943715	CMakeFiles/chip8_interpreter.dir/Chip8.cpp.obj	39a45d74dc0cad31
+8463	18584	6792518583822494	chip8_interpreter.exe	32ce5c54384ffa0c
+6	6842	6792519546039781	CMakeFiles/chip8_interpreter.dir/Chip8.cpp.obj	39a45d74dc0cad31
+6852	19041	6792519667537281	chip8_interpreter.exe	32ce5c54384ffa0c
+5	7288	6792519787099433	CMakeFiles/chip8_interpreter.dir/Chip8.cpp.obj	39a45d74dc0cad31
+7289	18779	6792519901619047	chip8_interpreter.exe	32ce5c54384ffa0c
+7	9718	6792520130418258	CMakeFiles/chip8_interpreter.dir/Chip8.cpp.obj	39a45d74dc0cad31
+9720	23627	6792520269007055	chip8_interpreter.exe	32ce5c54384ffa0c
+5	6934	6792520436381490	CMakeFiles/chip8_interpreter.dir/Chip8.cpp.obj	39a45d74dc0cad31
+6936	18246	6792520549092951	chip8_interpreter.exe	32ce5c54384ffa0c
+4	8547	6792520843290710	CMakeFiles/chip8_interpreter.dir/Chip8.cpp.obj	39a45d74dc0cad31
+8548	20706	6792520964430616	chip8_interpreter.exe	32ce5c54384ffa0c
