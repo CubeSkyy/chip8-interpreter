@@ -7,6 +7,7 @@
 
 #include <cstdint>
 #include <random>
+#include <cstring>
 
 using namespace std;
 
@@ -23,12 +24,18 @@ public:
     uint8_t delay_timer{};
     uint8_t sound_timer{};
     uint8_t keypad[16]{};
-    uint8_t display[64 * 32]{};
+    uint32_t display[64 * 32]{};
     uint16_t opcode;
 
-    const unsigned int START_ADDRESS = 0x200;
-    const unsigned int FONTSET_START_ADDRESS = 0x50;
 
+    const unsigned int START_ADDRESS = 0x200;
+    const unsigned int VIDEO_WIDTH = 64;
+    const unsigned int VIDEO_HEIGHT = 32;
+
+    const unsigned int DEFAULT_SCALE = 10;
+    const unsigned int DEFAULT_DELAY = 3;
+
+    const unsigned int FONTSET_START_ADDRESS = 0x50;
     static const unsigned int FONTSET_SIZE = 80;
     uint8_t fontset[FONTSET_SIZE] =
             {
@@ -75,10 +82,38 @@ public:
     void OP_8xy6();
     void OP_8xy7();
     void OP_8xyE();
+    void OP_9xy0();
+    void OP_Annn();
+    void OP_Bnnn();
+    void OP_Cxkk();
+    void OP_Dxyn();
+    void OP_Ex9E();
+    void OP_ExA1();
+    void OP_Fx07();
+    void OP_Fx0A();
+    void OP_Fx15();
+    void OP_Fx18();
+    void OP_Fx1E();
+    void OP_Fx29();
+    void OP_Fx33();
+    void OP_Fx55();
+    void OP_Fx65();
+
+
+    void OP_NULL();
+
+    void opcode_translation(uint16_t opcode);
+
+    // Main Cycle
+    void Cycle();
+
+
 
 
     default_random_engine randGen;
-    uniform_int_distribution<uint8_t> randByte;
+    uniform_int_distribution<int> randByte;
+
+
 };
 
 
