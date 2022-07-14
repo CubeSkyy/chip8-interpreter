@@ -33,7 +33,7 @@ public:
     const unsigned int VIDEO_HEIGHT = 32;
 
     const unsigned int DEFAULT_SCALE = 10;
-    const unsigned int DEFAULT_DELAY = 3;
+    const unsigned int DEFAULT_DELAY = 5;
 
     const unsigned int FONTSET_START_ADDRESS = 0x50;
     static const unsigned int FONTSET_SIZE = 80;

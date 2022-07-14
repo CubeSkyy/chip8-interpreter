@@ -1,3 +1,8 @@
 # chip8-interpreter
 
-Following https://austinmorlan.com/posts/chip8_emulator/#16-8-bit-registers
+Chip-8 Interpreter helped by the guide at https://austinmorlan.com/posts/chip8_emulator/
+
+Usage: 
+```bash
+chip8 ROM_FILENAME [Scale=10] [Delay=5]
+```
